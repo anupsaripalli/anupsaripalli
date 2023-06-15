@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "ee405c78-d11e-4f93-ae37-6ceb3284ef4c",
+		"name": "image",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/emp?financialYear=1991",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/slab/cal?financialYear=2021",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"slab",
+						"cal"
+					],
+					"query": [
+						{
+							"key": "financialYear",
+							"value": "2021"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/emp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"anup\",\r\n    \"lastName\":\"s\",\r\n    \"email\":\"s@gamil.com\",\r\n    \"phoneNumber\":[919989809,91979891],\r\n    \"doj\":\"2022-01-30\",\r\n    \"sal\": 30000.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/slab/cal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"slab",
+						"cal"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
